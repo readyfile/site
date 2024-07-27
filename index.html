@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <title>Readyfile</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.readyfile.co/web/style.css"/>
-        <script src="https://cdn.readyfile.co/web/script.js"></script> 
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <!--Header-->
-        <div class="container header">
-    <div class="innerH" id="desktop">
-        <img src="https://cdn.readyfile.co/web/assets/logo/darkBurgundyTransparent.png" onclick="location.href='/'" width="64px">
-        <div class="right">
-            <button onclick="location.href='https://streamsort.com'" class="button">StreamSort</button>
+<head>
+    <title>Readyfile</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.readyfile.co/web/style.css"/>
+    <script src="https://cdn.readyfile.co/web/script.js"></script>
+    <style>
+    	a{color:white; padding: 10px; background-color: #410303; border-radius: 5px; text-decoration:none;}
+        a:hover{background-color: #840606}
+    </style>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!--Header-->
+    <div class="container header">
+        <div class="innerH" id="desktop">
+            <img src="https://cdn.readyfile.co/web/assets/logo/darkBurgundyTransparent.png" onclick="location.href='/'" width="64px">
+        </div>
+        <div class="innerH" id="mobile">
+            <button class="menubutton" onclick="openNav()"><i id="menuicon" class="fal fa-bars"></i></button>
         </div>
     </div>
-    <div class="innerH" id="mobile">
-        <button class="menubutton" onclick="openNav()"><i id="menuicon" class="fal fa-bars"></i></button>
-        <div class="right">
-            <button onclick="location.href='https://streamsort.com'" class="button">StreamSort</button>
+
+    <!--Greeting-->
+    <div class="container greeting">
+        <div class="inner" style="padding-bottom: 40px;">
+            <p class="welcomeText">Welcome to Readyfile</p>
+            <p class="headingtext">See below our services</p>
         </div>
     </div>
-</div>
-        <div class="container greeting">
-            <div class="inner" style="padding-bottom: 40px;">
-                <p class="welcomeText">Welcome to Readyfile</p>
-                <p class="headingtext">Unfortunately, we are still under development</p>
-            </div>
-        </div>
-    </div>
-        <!--Main-->
-        <div class="container" style="min-height: 800px;">
-            <div class="inner main">
-                <div style="margin: auto;">
-                    <p class="headingtext">Under Development</p>
-                    <p>
-Hello there! Welcome to Readyfile, or well the temporary landing page.
-<br><br>
-Readyfile is a solution to accountancy firms (mainly in the United Kingdom) where an automated software-as-a-service can process invoices, helping especially in VAT.
-We also intend on adding a feature where we can link bank statements to the invoices or credit notes submitted to us, allowing accountants to have an easier time analyzing bank and cash-in-hand accounts.
-<br><br>
-If you have any additional queries, please email us at <a href="mailto:support@readyfile.co" style="color:#840606">support@readyfile.co</a>
-Please note that this email address will only be valid until after we release the platform to the public, and you may get a reply from another email address.</p>
+
+    <!--Main-->
+    <div class="container" style="min-height: 800px;">
+        <div class="inner main">
+            <div style="margin: auto;">
+
+                <!-- Accountancy Software Section -->
+                <div class="section" id="accountancy-software">
+                    <h3>Accountancy Software</h3>
+                    <p>Our Accountancy Software is designed to streamline and optimise your accounting processes. With advanced features tailored for accountants and financial professionals, it ensures accuracy, efficiency, and compliance. Stay tuned for more updates as we finalise the details.</p>
+                </div>
+				
+                <hr>
+
+                <!-- Charities Software Section -->
+                <div class="section" id="charities-software">
+                    <h3>Charities Software</h3>
+                    <p>Readyfile's Charities Software provides a comprehensive solution for charity management, enabling organisations to efficiently handle donations, and gift aid claims. Our platform simplifies administrative tasks so you can focus on making a difference.</p>
+                    <p><a href="https://charities.readyfile.co">Sign Up</a> | <a href="https://app.charities.readyfile.co">Log In</a></p>
+                </div>
+
+	<hr>
+
+                <!-- NotesBytes Section -->
+                <div class="section" id="notesbytes">
+                    <h3>NotesBytes</h3>
+                    <p>NotesBytes is an app that has revolutionised the student experience by providing a platform for buying and selling study materials at competitive prices, boasting the lowest commission rates on the market.</p>
+                    <p><a href="https://www.notesbytes.com">Visit NotesBytes</a></p>
                 </div>
             </div>
         </div>
-        <!--Footer-->
-                <div class="container copyright">
-                    <div class="inner" style="padding-top:0.2%;padding-bottom:0.2%;">
-                        <p class="smallText">© Readyfile 2023</p>
-                    </div>
-                </div>
-    </body>
+    </div>
+
+    <!--Footer-->
+    <div class="container copyright">
+        <div class="inner" style="padding-top:0.2%;padding-bottom:0.2%;">
+            <p class="smallText">Readyfile and NotesBytes are a trading name of Readyfile Ltd, registered in England and Wales, № 15186469. Registered office: 7 Irk Vale Drive, Manchester, OL1 2TW.</p>
+        </div>
+    </div>
+</body>
 </html>
