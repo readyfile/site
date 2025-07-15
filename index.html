@@ -1,72 +1,140 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <title>Readyfile</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.readyfile.co/web/style.css"/>
-    <script src="https://cdn.readyfile.co/web/script.js"></script>
-    <style>
-    	a{color:white; padding: 10px; background-color: #410303; border-radius: 5px; text-decoration:none;}
-        a:hover{background-color: #840606}
-    </style>
-    <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readyfile Ltd</title>
+  <link rel="stylesheet" href="https://cdn.readyfile.co/web/style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+  <style>
+    :root {
+      --primary: #410303;
+      --primary-dark: #840606;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    header, footer {
+      background: var(--primary);
+      color: var(--text-light);
+      padding: 1rem 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      cursor: pointer;
+    }
+
+    .menubutton {
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 1.5rem;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary);
+      color: var(--text-light);
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+      transition: background-color 0.2s ease;
+    }
+
+    a.button:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .smallText {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!--Header-->
-    <div class="container header">
-        <div class="innerH" id="desktop">
-            <img src="https://cdn.readyfile.co/web/assets/logo/darkBurgundyTransparent.png" onclick="location.href='/'" width="64px">
-        </div>
-        <div class="innerH" id="mobile">
-            <button class="menubutton" onclick="openNav()"><i id="menuicon" class="fal fa-bars"></i></button>
-        </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container logo">
+      <img src="https://cdn.readyfile.co/web/assets/logo/whiteTransparent.png" alt="Readyfile Logo" width="64" onclick="location.href='/'" />
+    </div>
+  </header>
+
+  <!-- Welcome -->
+  <section class="container">
+    <h1>Welcome to Readyfile Ltd</h1>
+    <p>Explore our services below.</p>
+  </section>
+
+  <!-- Services -->
+  <main class="container">
+    <!-- Accountancy Software -->
+    <div class="section" id="accountancy-software">
+      <h2>Accountancy Software</h2>
+      <p>Our Accountancy Software streamlines accounting processes with advanced tools for professionals. Ensure accuracy, efficiency, and compliance. More details coming soon.</p>
     </div>
 
-    <!--Greeting-->
-    <div class="container greeting">
-        <div class="inner" style="padding-bottom: 40px;">
-            <p class="welcomeText">Welcome to Readyfile</p>
-            <p class="headingtext">See below our services</p>
-        </div>
+    <!-- Charities Software -->
+    <div class="section" id="charities-software">
+      <h2>Almonzo</h2>
+      <p>Readyfile's platform helps charities manage donations and claim Gift Aid efficiently, with additional features for members of the charity. Simplify admin tasks so you can focus on impact. "Almonzo" coming from the word "almoner"</p>
+      <a href="https://www.almonzo.org" class="button">Sign Up</a>
+      <a href="https://app.almonzo.org" class="button">Log In</a>
     </div>
 
-    <!--Main-->
-    <div class="container" style="min-height: 800px;">
-        <div class="inner main">
-            <div style="margin: auto;">
-
-                <!-- Accountancy Software Section -->
-                <div class="section" id="accountancy-software">
-                    <h3>Accountancy Software</h3>
-                    <p>Our Accountancy Software is designed to streamline and optimise your accounting processes. With advanced features tailored for accountants and financial professionals, it ensures accuracy, efficiency, and compliance. Stay tuned for more updates as we finalise the details.</p>
-                </div>
-				
-                <hr>
-
-                <!-- Charities Software Section -->
-                <div class="section" id="charities-software">
-                    <h3>Charities Software</h3>
-                    <p>Readyfile's Charities Software provides a comprehensive solution for charity management, enabling organisations to efficiently handle donations, and gift aid claims. Our platform simplifies administrative tasks so you can focus on making a difference.</p>
-                    <p><a href="https://charities.readyfile.co">Sign Up</a> | <a href="https://app.charities.readyfile.co">Log In</a></p>
-                </div>
-
-	<hr>
-
-                <!-- NotesBytes Section -->
-                <div class="section" id="notesbytes">
-                    <h3>NotesBytes</h3>
-                    <p>NotesBytes is an app that has revolutionised the student experience by providing a platform for buying and selling study materials at competitive prices, boasting the lowest commission rates on the market.</p>
-                    <p><a href="https://www.notesbytes.com">Visit NotesBytes</a></p>
-                </div>
-            </div>
-        </div>
+    <!-- NotesBytes -->
+    <div class="section" id="notesbytes">
+      <h2>NotesBytes</h2>
+      <p>NotesBytes is a marketplace for students to buy and sell study materials, offering the lowest commission rates available.</p>
+      <a href="https://www.notesbytes.com" class="button">Visit NotesBytes</a>
     </div>
+  </main>
 
-    <!--Footer-->
-    <div class="container copyright">
-        <div class="inner" style="padding-top:0.2%;padding-bottom:0.2%;">
-            <p class="smallText">Readyfile and NotesBytes are a trading name of Readyfile Ltd, registered in England and Wales, № 15186469. Registered office: 7 Irk Vale Drive, Manchester, OL1 2TW.</p>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container smallText">
+      <p>Readyfile, NotesBytes, and Almonzo are trading names of Readyfile Ltd, registered in England and Wales № 15186469.</p>
+      <p>Registered office: 7 Irk Vale Drive, Manchester, OL1 2TW.</p>
     </div>
+  </footer>
+
+  <script src="https://cdn.readyfile.co/web/script.js"></script>
 </body>
 </html>
