@@ -1,140 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
   <title>Readyfile Ltd</title>
-  <link rel="stylesheet" href="https://cdn.readyfile.co/web/style.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
-  <style>
-    :root {
-      --primary: #410303;
-      --primary-dark: #840606;
-      --text-light: #fff;
-    }
-
-    body {
-      margin: 0;
-      background: #f8f8f8;
-      color: #333;
-    }
-
-    header, footer {
-      background: var(--primary);
-      color: var(--text-light);
-      padding: 1rem 2rem;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo img {
-      cursor: pointer;
-    }
-
-    .menubutton {
-      background: none;
-      border: none;
-      color: var(--text-light);
-      font-size: 1.5rem;
-    }
-
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-
-    .section {
-      margin-bottom: 3rem;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: var(--primary);
-      color: var(--text-light);
-      text-decoration: none;
-      border-radius: 5px;
-      margin-right: 0.5rem;
-      transition: background-color 0.2s ease;
-    }
-
-    a.button:hover {
-      background-color: var(--primary-dark);
-    }
-
-    .smallText {
-      font-size: 0.85rem;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .logo {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .container {
-        padding: 1.5rem;
-      }
-    }
-  </style>
 </head>
 <body>
+  <div id="bg1" class="bg-layer"></div>
+  <div id="bg2" class="bg-layer"></div>
 
-  <!-- Header -->
-  <header>
-    <div class="container logo">
-      <img src="https://cdn.readyfile.co/web/assets/logo/whiteTransparent.png" alt="Readyfile Logo" width="64" onclick="location.href='/'" />
-    </div>
-  </header>
+  <div class="topbar"><img src="https://cdn.readyfile.co/web/assets/logo/whiteTransparent.png" alt="Logo"/></div>
+  <div id="overlay" class="overlay">Tap to Wake</div>
 
-  <!-- Welcome -->
-  <section class="container">
-    <h1>Welcome to Readyfile Ltd</h1>
-    <p>Explore our services below.</p>
-  </section>
-
-  <!-- Services -->
-  <main class="container">
-    <!-- Accountancy Software -->
-    <div class="section" id="accountancy-software">
-      <h2>Accountancy Software</h2>
-      <p>Our Accountancy Software streamlines accounting processes with advanced tools for professionals. Ensure accuracy, efficiency, and compliance. More details coming soon.</p>
+  <div class="menu">
+    <div class="section" data-bg="https://cdn.readyfile.co/web/assets/genericPhotos/neo-background.jpg">
+      <h2>Accountancy</h2>
+      <div class="items">
+        <div class="back-btn"><span>◁ Back</span></div>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=101')"><span>Log In</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=102')"><span>Sign Up</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=103')"><span>About</span></a>
+      </div>
     </div>
 
-    <!-- Charities Software -->
-    <div class="section" id="charities-software">
-      <h2>Almonzo</h2>
-      <p>Readyfile's platform helps charities manage donations and claim Gift Aid efficiently, with additional features for members of the charity. Simplify admin tasks so you can focus on impact. "Almonzo" coming from the word "almoner"</p>
-      <a href="https://www.almonzo.org" class="button">Sign Up</a>
-      <a href="https://app.almonzo.org" class="button">Log In</a>
+    <div class="section" data-bg="https://cdn.readyfile.co/web/assets/genericPhotos/DeepavaliFlowers.jpg">
+      <h2>Almonzo (Charities)</h2>
+      <div class="items">
+        <div class="back-btn"><span>◁ Back</span></div>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=104')"><span>Log In</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=105')"><span>Sign Up</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=106')"><span>About</span></a>
+      </div>
     </div>
 
-    <!-- NotesBytes -->
-    <div class="section" id="notesbytes">
+    <div class="section" data-bg="https://cdn.notesbytes.com/assets/backgrounds/SubjectPhysics.jpg">
       <h2>NotesBytes</h2>
-      <p>NotesBytes is a marketplace for students to buy and sell study materials, offering the lowest commission rates available.</p>
-      <a href="https://www.notesbytes.com" class="button">Visit NotesBytes</a>
+      <div class="items">
+        <div class="back-btn"><span>◁ Back</span></div>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=107')"><span>View</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=108')"><span>About</span></a>
+      </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container smallText">
-      <p>Readyfile, NotesBytes, and Almonzo are trading names of Readyfile Ltd, registered in England and Wales № 15186469.</p>
-      <p>Registered office: 7 Irk Vale Drive, Manchester, OL1 2TW.</p>
+    <div class="section" data-bg="https://picsum.photos/1600/900?random=5">
+      <h2>Legal</h2>
+      <div class="items">
+        <div class="back-btn"><span>◁ Back</span></div>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=109')"><span>Privacy</span></a>
+        <a href="about:blank" target="_blank" style="background-image:url('https://picsum.photos/1200/500?random=110')"><span>Payments</span></a>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="https://cdn.readyfile.co/web/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
