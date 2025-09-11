@@ -96,3 +96,27 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("active");
   resetInactivity();
 });*/
+
+let lastOpenItems = null;
+
+function openModal(resource) {
+  lastOpenItems = document.querySelector('.items.active');
+  if (lastOpenItems) lastOpenItems.classList.remove('active');
+
+  const modal = document.getElementById('modal');
+  const frame = document.getElementById('modal-frame');
+  frame.src = resource;
+  modal.style.display = 'flex';
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  const frame = document.getElementById('modal-frame');
+  frame.src = '';
+  modal.style.display = 'none';
+
+  if (lastOpenItems) {
+    lastOpenItems.classList.add('active');
+    lastOpenItems = null;
+  }
+}
