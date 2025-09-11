@@ -184,3 +184,43 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-top {
+  background: #410303;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-back {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+}
+
+#modal-frame {
+  flex: 1;
+  border: none;
+  width: 100%;
+}
