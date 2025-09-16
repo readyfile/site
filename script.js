@@ -1,4 +1,4 @@
-const defaultBg = "https://picsum.photos/1600/900?random=1";
+const defaultBg = "https://cdn.readyfile.co/web/assets/genericPhotos/IMG_6272.jpg";
 const bg1 = document.getElementById("bg1");
 const bg2 = document.getElementById("bg2");
 const overlay = document.getElementById("overlay");
