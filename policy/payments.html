@@ -5,150 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payments Policy - Readyfile</title>
     <style>
+        :root {
+            --primary: #410303;
+            --primary-hover: #840606;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --bg-light: #fafafa;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --accent-bg: #fff5f5;
+            --accent-border: #840606;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333333;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
+
         h1, h2, h3 {
-            color: #111827;
+            color: var(--primary);
         }
+
         h1 {
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 10px;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 0;
         }
+
         h2 {
-            margin-top: 24px;
-            border-bottom: 1px solid #f3f4f6;
-            padding-bottom: 6px;
+            font-size: 1.3rem;
+            margin-top: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
         }
+
         .meta {
-            color: #6b7280;
+            color: var(--text-muted);
             font-size: 0.9em;
             margin-bottom: 24px;
         }
+
+        .nav-breadcrumbs {
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
         .notice-box {
-            background-color: #f9fafb;
-            border-left: 4px solid #3b82f6;
-            padding: 12px 16px;
-            margin: 16px 0;
+            background-color: var(--accent-bg);
+            border-left: 4px solid var(--accent-border);
+            padding: 14px 18px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
         }
+
         a {
-            color: #2563eb;
+            color: var(--primary-hover);
             text-decoration: none;
+            font-weight: 500;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         ul, ol {
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 8px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.88em;
+            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
 
-    <h1>Payments Policy</h1>
-    <p class="meta"><strong>Last Updated:</strong> 16 September 2025</p>
+    <div class="container">
+        <nav class="nav-breadcrumbs">
+            <a href="https://readyfile.co">&larr; Return to Readyfile Home</a> | 
+            <a href="https://readyfile.co/policies/tos">Terms of Service</a> | 
+            <a href="https://app.readyfile.co">Go to App</a>
+        </nav>
 
-    <section>
-        <h2>1. Overview &amp; General Information</h2>
-        <p>This Payment Policy governs your use and functionality of trading services, including buying and selling, on <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a> and its associated subdomains.</p>
-        <p><strong>Readyfile Ltd</strong> is a company registered in England and Wales under Company Registration № 15186469. Our registered office address is <strong>7 Irk Vale Drive, Manchester, OL1 2TW, United Kingdom</strong>.</p>
-        <p>Throughout this policy, <em>"Readyfile"</em>, <em>"we"</em>, <em>"our"</em>, or <em>"us"</em> refers to Readyfile Ltd, and <em>"you"</em> or <em>"user"</em> refers to any individual or entity agreeing to these payment terms to utilize our services.</p>
-    </section>
+        <h1>Payments Policy</h1>
+        <p class="meta"><strong>Last Updated:</strong> 8 August 2026</p>
 
-    <section>
-        <h2>2. Service-Specific Policies</h2>
-        <p>Depending on which specific service or product you are accessing under the Readyfile umbrella, the following policy variations apply:</p>
-        <ul>
-            <li><strong>NotesBytes:</strong> Operates under a standalone payment policy, available directly at <a href="https://www.notesbytes.com/policies/payment" target="_blank" rel="noopener">notesbytes.com/policies/payment</a>.</li>
-            <li><strong>Almonzo:</strong> The payment policy is integrated directly with the Terms and Conditions sent to participating/paid-up charities.</li>
-            <li><strong>Accountancy App &amp; General Platform Services:</strong> Governed fully by the terms set out in this document below.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>1. Overview &amp; Business Information</h2>
+            <p>This Payments Policy sets out the terms, payment rules, and financial standards governing transactions processed on <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a> and its associated software applications, subdomains, and portals.</p>
+            <p><strong>Readyfile Ltd</strong> is a company registered in England and Wales (Company Registration № 15186469). Registered office: <strong>7 Irk Vale Drive, Manchester, OL1 2TW, United Kingdom</strong>.</p>
+            <p>This policy forms part of our legal agreement with you and should be read alongside our general <a href="https://readyfile.co/policies/tos" target="_blank" rel="noopener">Terms of Service</a>.</p>
+        </section>
 
-    <section>
-        <h2>3. Accepted Payment Methods</h2>
-        <p>You may pay for services on Readyfile using any of the following approved payment methods:</p>
-        <ol>
-            <li>
-                <strong>Credit / Debit Card:</strong> We accept all major cards, including at minimum <strong>Visa</strong> and <strong>Mastercard</strong>. Card payments are processed immediately through secure third-party gateways.
-            </li>
-            <li>
-                <strong>Bank Transfer:</strong> Bank transfers are accepted provided you are sending funds to a GBP (&pound;) bank account maintained in the United Kingdom. 
-                <div class="notice-box">
-                    <strong>Important:</strong> All bank transfers must include the pre-specified <strong>5-character reference</strong> provided during the checkout or top-up process. Failure to include this reference may delay the crediting of your account.
-                </div>
-            </li>
-        </ol>
-    </section>
+        <section>
+            <h2>2. Scope &amp; Service Frameworks</h2>
+            <p>Readyfile Ltd provides web-based software, API services, and accountancy automation utilities. Payment terms apply according to the service framework utilized:</p>
+            <ul>
+                <li><strong>Readyfile Accountancy Platform:</strong> Governed fully by the advance top-up and usage-based terms set out in this document below.</li>
+                <li><strong>NotesBytes:</strong> Governed by its standalone payment policy available at <a href="https://www.notesbytes.com/policies/payment" target="_blank" rel="noopener">notesbytes.com/policies/payment</a>.</li>
+                <li><strong>Almonzo:</strong> Governed by custom service agreements and Terms &amp; Conditions provided directly to participating entities.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>4. Pre-Payment, Account Credit &amp; Usage</h2>
-        <ul>
-            <li><strong>Advance Top-Up Model:</strong> Services are billed on a pre-paid basis. Payments must be made in advance to top up your account balance before consuming services.</li>
-            <li><strong>Service Pricing &amp; Deduction:</strong> Specific pricing for each service on our platform is clearly displayed at <a href="https://app.readyfile.co" target="_blank" rel="noopener">app.readyfile.co</a>. Funds will be deducted directly from your available balance as you use the services.</li>
-            <li><strong>Credit Expiration:</strong> Pre-paid account credit does not expire, provided Readyfile Ltd remains solvent.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>3. Payment Methods &amp; SCA Security</h2>
+            <p>Payments for account credits and services on <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a> can be made via:</p>
+            <ol>
+                <li>
+                    <strong>Credit &amp; Debit Cards:</strong> We accept major debit and credit cards (Visa and Mastercard). In compliance with UK and EU Payment Services Regulations (PSD2 / Strong Customer Authentication), card payments undergo 3D Secure verification where required by your issuing bank.
+                </li>
+                <li>
+                    <strong>Bank Transfers (Pay by Bank):</strong> Bank transfers are accepted for UK GBP (&pound;) transactions. 
+                    <div class="notice-box">
+                        <strong>Important:</strong> You must include your allocated unique <strong>5-character reference</strong> on every bank transfer. Omission of this reference will cause processing delays or failure of automatic credit assignment to your account at <a href="https://app.readyfile.co" target="_blank" rel="noopener">app.readyfile.co</a>.
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-    <section>
-        <h2>5. Refunds &amp; Administration Fees</h2>
-        <ul>
-            <li><strong>Non-Refundable Credit:</strong> As a general rule, purchased credit added to your account is non-refundable once uploaded.</li>
-            <li><strong>15-Day Account Opening Exception:</strong> You may request a refund of unconsumed credit strictly within <strong>15 calendar days</strong> of opening your account.</li>
-            <li><strong>Administration Fee:</strong> Any approved refund request made within the 15-day window is subject to an administration and processing fee of <strong>up to 5%</strong>, which will be deducted from the refunded total.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>4. Pre-Payment, Usage &amp; Tariff Deduction</h2>
+            <ul>
+                <li><strong>Pre-Paid Credit Model:</strong> Services are billed on a pay-as-you-go, advance credit basis. Account credit must be purchased before processing documents or utilizing premium features.</li>
+                <li><strong>Tariff Rates:</strong> Current document processing and storage rates are maintained in real-time within your <a href="https://app.readyfile.co" target="_blank" rel="noopener">app.readyfile.co</a> Billing Portal and outlined on our main site at <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a>.</li>
+                <li><strong>Automatic Deductions:</strong> Funds are automatically deducted from your available credit upon consumption of services (e.g., invoice/bank statement extraction, storage utilization).</li>
+                <li><strong>Credit Expiration:</strong> Account credit balance does not expire while Readyfile Ltd remains active and solvent.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>6. Taxes &amp; Currency</h2>
-        <ul>
-            <li><strong>Currency:</strong> All prices, transactions, and account balances are denominated and payable in British Pounds Sterling (GBP &pound;).</li>
-            <li><strong>Taxes:</strong> Unless explicitly stated otherwise, prices quoted on the platform may be exclusive of applicable taxes (such as UK Value Added Tax - VAT). Applicable taxes will be calculated and added during payment processing based on your billing location.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>5. Consumer Statutory Rights, Refunds &amp; Admin Fees</h2>
+            <p>Readyfile Ltd primarily serves business clients and commercial entities (B2B). Where services are accessed by consumers (B2C), statutory regulations apply as follows:</p>
+            <ul>
+                <li><strong>Immediate Digital Delivery &amp; Statutory Waiver:</strong> In accordance with the UK Consumer Contracts Regulations 2013, by topping up your account balance and initiating digital processing or extraction, you explicitly request immediate performance of the service and acknowledge that your 14-day statutory right of cancellation is forfeited once digital services are supplied or credits are consumed.</li>
+                <li><strong>15-Day New Account Credit Refund:</strong> As a commercial courtesy, you may request a refund of remaining, <em>unconsumed</em> pre-paid credit within <strong>15 calendar days</strong> of opening your initial account.</li>
+                <li><strong>Administration Fee:</strong> Approved refunds of unconsumed credits requested within the 15-day window are subject to an administrative and payment processing fee of <strong>up to 5%</strong> to cover non-recoverable payment gateway charges.</li>
+                <li><strong>Discretionary Refunds:</strong> After 15 days, or for partial usage, any refund or balance return is granted strictly at the sole discretion of Readyfile Ltd. Free trial credits or promotional bonuses are entirely non-refundable and non-transferable.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>7. Payment Security &amp; Data Protection</h2>
-        <p>We prioritize the security of your financial data:</p>
-        <ul>
-            <li>All credit and debit card transactions are handled by PCI-DSS compliant payment processing partners.</li>
-            <li>Readyfile Ltd does not directly store, process, or retain complete raw payment card numbers on our servers.</li>
-            <li>All transmission of payment data is encrypted using standard Transport Layer Security (TLS/SSL) technology.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>6. Taxes &amp; Currency Standards</h2>
+            <ul>
+                <li><strong>Currency:</strong> All transactions, charges, pricing structures, and account balances are denominated and processed strictly in British Pounds Sterling (GBP &pound;).</li>
+                <li><strong>Value Added Tax (VAT):</strong> Unless explicitly stated otherwise, listed pricing is exclusive of UK Value Added Tax (VAT). Applicable VAT (20%) or local taxes will be calculated, displayed, and charged at checkout in compliance with UK tax regulations. VAT invoices are automatically generated and accessible inside <a href="https://app.readyfile.co" target="_blank" rel="noopener">app.readyfile.co</a>.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>8. Billing Disputes &amp; Failed Payments</h2>
-        <ul>
-            <li><strong>Failed Transactions:</strong> If a payment fails or is rejected by your financial institution, services will not be rendered or topped up until successful settlement occurs.</li>
-            <li><strong>Disputes &amp; Chargebacks:</strong> If you believe a payment error has occurred, please contact us immediately before filing a chargeback or dispute with your bank or card issuer. Unreasonable chargebacks may result in immediate suspension or termination of your account balance and access.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>7. Security &amp; PCI-DSS Compliance</h2>
+            <p>Your payment information is secured according to rigorous industry standards:</p>
+            <ul>
+                <li>Card transactions are handled via PCI-DSS Level 1 compliant payment gateways.</li>
+                <li>Readyfile Ltd does not store, capture, or directly handle raw payment card details on its servers.</li>
+                <li>All sessions and communication between your browser and <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a> are protected using 256-bit Transport Layer Security (TLS/SSL) encryption.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>9. Policy Updates &amp; Changes</h2>
-        <p>We reserve the right to modify or update this Payments Policy from time to time to reflect changes in our services, financial regulations, or operational procedures. Any updates will be posted directly on this webpage with a revised "Last Updated" date.</p>
-    </section>
+        <section>
+            <h2>8. Failed Payments, Disputes &amp; Chargebacks</h2>
+            <ul>
+                <li><strong>Failed Transactions:</strong> If a top-up or transfer fails, service access may be restricted until the full balance is cleared.</li>
+                <li><strong>Dispute Resolution:</strong> If you identify a potential billing discrepancy, please contact <a href="mailto:support@readyfile.co">support@readyfile.co</a> immediately.</li>
+                <li><strong>Unjustified Chargebacks:</strong> Initiating an improper or fraudulent chargeback through your financial institution without prior contact may lead to immediate suspension or closure of your account on <a href="https://app.readyfile.co" target="_blank" rel="noopener">app.readyfile.co</a> and forfeiture of unverified credit balances.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>10. Contact Information</h2>
-        <p>If you have any questions, billing queries, or refund requests under this policy, please reach out to us at:</p>
-        <address>
-            <strong>Readyfile Ltd</strong><br>
-            7 Irk Vale Drive<br>
-            Manchester, OL1 2TW<br>
-            United Kingdom<br>
-            Website: <a href="https://readyfile.co">readyfile.co</a>
-        </address>
-    </section>
+        <section>
+            <h2>9. Policy Updates</h2>
+            <p>Readyfile Ltd reserves the right to update this Payments Policy at any time to reflect legislative changes or platform enhancements. Revisions will be published on <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a> with an updated effective date.</p>
+        </section>
+
+        <section>
+            <h2>10. Contact &amp; Legal Queries</h2>
+            <p>For questions regarding invoices, bank references, or refund requests, please contact our financial operations team:</p>
+            <address>
+                <strong>Readyfile Ltd</strong><br>
+                7 Irk Vale Drive<br>
+                Manchester, OL1 2TW<br>
+                United Kingdom<br>
+                Email: <a href="mailto:support@readyfile.co">support@readyfile.co</a><br>
+                Website: <a href="https://readyfile.co" target="_blank" rel="noopener">readyfile.co</a>
+            </address>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Readyfile Ltd (Co. № 15186469). All rights reserved. | <a href="https://readyfile.co">Home</a> | <a href="https://readyfile.co/policies/tos">Terms of Service</a> | <a href="https://app.readyfile.co">App Portal</a></p>
+        </footer>
+    </div>
 
 </body>
 </html>
